@@ -1,27 +1,28 @@
-package lotto;
+package lotto.project02;
 
 import java.util.Arrays;
 
 public class Lotto {
 	private int[] nums;
+	private 
 	
 	public Lotto() {
 		nums = new int[6];
 		randomNum();
 	}
 	
-	private void randomNum() { //6°³ ¼ýÀÚ ·£´ýÇÒ´ç(1~46), Áßº¹X, Á¤·Ä
+	private void randomNum() { //6ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ò´ï¿½(1~46), ï¿½ßºï¿½X, ï¿½ï¿½ï¿½ï¿½
 		
 		for(int i=0; i<nums.length ; i++) {
-			nums[i] = (int)(Math.random()*46 + 1); //·£´ýÇÒ´ç
-			for(int j=0 ; j<i ; j++) {  //Áßº¹ °Ë»ç
+			nums[i] = (int)(Math.random()*46 + 1); //ï¿½ï¿½ï¿½ï¿½ï¿½Ò´ï¿½
+			for(int j=0 ; j<i ; j++) {  //ï¿½ßºï¿½ ï¿½Ë»ï¿½
 				if(nums[i] == nums[j]) {
 					i--;
 					break;
 				}
 			}
 		}
-		Arrays.sort(nums); //Á¤·Ä
+		Arrays.sort(nums); //ï¿½ï¿½ï¿½ï¿½
 	}
 	
 	public int[] getNums() {

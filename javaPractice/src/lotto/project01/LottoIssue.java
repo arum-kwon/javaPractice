@@ -1,4 +1,4 @@
-package lotto;
+package lotto.project01;
 
 import java.util.Arrays;
 

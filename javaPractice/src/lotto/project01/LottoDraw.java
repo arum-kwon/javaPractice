@@ -1,4 +1,4 @@
-package lotto;
+package lotto.project01;
 
 public class LottoDraw {
 	private Lotto drawNum;
